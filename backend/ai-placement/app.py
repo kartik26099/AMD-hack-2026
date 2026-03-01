@@ -34,7 +34,7 @@ os.makedirs(os.path.join(app.config['UPLOAD_FOLDER'], 'resumes'), exist_ok=True)
 os.makedirs(os.path.join(app.config['UPLOAD_FOLDER'], 'jds'), exist_ok=True)
 
 # Initialize Resume Parser
-mistral_api_key = os.getenv("MISTRAL_API_KEY", "wxJu9G7KyqjjTfLbjaRRso4utGo9mqDX")
+mistral_api_key = os.getenv("MISTRAL_API_KEY")
 resume_parser = MistralResumeParser(api_key=mistral_api_key)
 
 # CORS configuration
